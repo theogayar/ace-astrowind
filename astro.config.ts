@@ -81,6 +81,11 @@ export default defineConfig({
   },
 
   vite: {
+    server: {
+      watch: {
+        usePolling: true,
+      },
+    },
     resolve: {
       alias: {
         '~': path.resolve(__dirname, './src'),
